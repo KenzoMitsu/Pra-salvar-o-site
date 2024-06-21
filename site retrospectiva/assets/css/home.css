@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --azul-escuro: rgb(5, 55, 130);
+    --azul-claro: lightskyblue;
+    --azul-principal-letras: rgb(77, 205, 247);
+    --roxo-claro: mediumpurple;
+    --azul-degrade: rgb(12, 159, 239);
+}
+
+.g-small {
+    gap: 18px;
+}
+
+/* ALA DE BORDER RADINHOS AIAI */
+.small-border-radius {
+    border-radius: 6px;
+}
+
+.medium-border-radius {
+    border-radius: 10px;
+}
+
+.itens-center {
+    display: flex;
+    justify-content: center;
+}
+
+.img-senai {
+    width: 650px;
+    height: 400px;
+}
+
+.itens-center1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+/* ALA DE POSICIONAMENTO */
+.d-flex {
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+
+/* ALA DE TAMANHOS */
+.small-size-logo {
+    width: 155px;
+    height: 41px;
+}
+
+
+.atv-lista {
+    width: 355px;
+    height: 530px;
+    padding-left: 415px;
+}
+
+
+/* ALA DE PADDINGS, ESPAÇAMENTOS E MARGENS */
+.padding-left {
+    padding-left: 460px;
+    padding-bottom: 90px;
+}
+
+.padding-top-small1 {
+    padding-top: 10px;
+}
+
+.padding-top-small2 {
+    padding-top: 20px;
+}
+
+.padding-top-medium {
+    padding-top: 30px;
+}
+
+.padding-top-medium2 {
+    padding-top: 50px;
+}
+
+.direita {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 570px;
+}
+
+.padding-bottom-small1 {
+    padding-bottom: 15px;
+}
+
+.padding-bottom-small2 {
+    padding-bottom: 20px;
+}
+
+.padding-bottom-medium {
+    padding-bottom: 35px;
+}
+
+.padding-bottom-big {
+    padding-bottom: 52px;
+}
+
+.margin-small {
+
+}
+
+.limitador-de-texto {
+    padding-left: 320px;
+    width: 600px;
+}
+
+
+
+
+/* ALA DE COR DE FUNDO*/
+.bg-azul-escuro {
+    background: linear-gradient(135deg, var(--azul-escuro), var(--roxo-claro));
+    
+    width: 100%;
+    height: 140px;;
+}
+
+.bg-azure {
+    background-color: azure;
+}
+
+/* ALA DE COR DE TEXTO */
+.letras-cor-azul {
+    color: var(--azul-principal-letras);
+}
+
+
+/* ALA DE BOTÕES */
+.botao-opcao {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--azul-claro);
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    padding: 10px 20px; /* Simplificado para melhor legibilidade */
+    font-size: medium;
+    transition: background-color 0.6s ease; /* Transição suave para a cor de fundo */
+}
+
+.botao-opcao:hover {
+    background: aqua;
+}
+
+.img-python {
+    height: 280px;
+    width: 520px;
+}
+
+
+
+/* ALA DE DIMENSIONAMENTO DE TEXTO */
+.medium-text {
+    font-size:larger;
+}
+
+.big-text {
+    font-size:large;
+}
+
+.tittle-text {
+    font-size: 28px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    padding-bottom: 25px;
+    background-color: rgb(174, 232, 247);
+}
+
+.tittle-text-conclusão {
+    font-size: 30px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    background:rgb(204, 10, 49);
+    padding: 20px;
+    padding: -10px;
+}
+
+.small-text {
+    font-size: small;
+}
+
+.very-small-text {
+    font-size: smaller;
+}
+
+.rodape {
+    background-color: var(--azul-claro);
+    display: flex;
+    color:white;
+}
+
+.rodape img {
+    width: 300px;
+}
+
+.rodape .text1 {
+    padding-top: 25px;
+    margin: 60px;
+}
+
+.rodape .text2 {
+    padding-top: 25px;
+    margin: 60px;
+}
+/* Fim das informações */
+
+
+/* Início do rodapé CSS*/
+footer {
+    background: linear-gradient(135deg, var(--azul-escuro), var(--roxo-claro));
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+/* CARTA NA MANGA */
+.texto-anima {
+    position: relative; /* Para usar coordenadas relativas */
+    animation: moverDireitaEsquerda 5s infinite; /* Nome da animação, duração, e repetição infinita */
+}
+
+@keyframes moverDireitaEsquerda {
+    0% {
+        left: 0; /* Começa na posição inicial (à esquerda) */
+    }
+    100% {
+        left: calc(100% - 100px); /* Move até o final (à direita) */
+    }
+}
